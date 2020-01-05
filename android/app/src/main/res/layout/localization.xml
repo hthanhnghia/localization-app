@@ -15,34 +15,42 @@
             android:layout_height="wrap_content"
             android:layout_weight="1"
             android:layout_gravity="center"
-            android:text="TextView" />
+            android:text="@string/hello_world" />
 
         <LinearLayout
             android:layout_width="match_parent"
             android:layout_height="wrap_content"
             android:orientation="horizontal"
-            android:layout_gravity="center">
+            android:layout_gravity="center"
+            android:id="@+id/localization_buttons"
+            >
 
             <Button
                 android:id="@+id/english"
                 android:layout_width="wrap_content"
                 android:layout_height="wrap_content"
                 android:layout_weight="1"
-                android:text="English" />
+                android:text="English"
+                android:tag="en"
+                />
 
             <Button
                 android:id="@+id/chinese"
                 android:layout_width="wrap_content"
                 android:layout_height="wrap_content"
                 android:layout_weight="1"
-                android:text="Chinese" />
+                android:text="Chinese"
+                android:tag="zh"
+                />
 
             <Button
                 android:id="@+id/hindi"
                 android:layout_width="wrap_content"
                 android:layout_height="wrap_content"
                 android:layout_weight="1"
-                android:text="Hindu" />
+                android:text="Hindu"
+                android:tag="hi"
+                />
         </LinearLayout>
     </LinearLayout>
 </LinearLayout>
